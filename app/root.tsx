@@ -32,6 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
+      <script>AOS.init();</script>
       <body>
         {children}
         <ScrollRestoration />
