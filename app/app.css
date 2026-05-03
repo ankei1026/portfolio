@@ -27,7 +27,9 @@
 
 html,
 body {
-  @apply bg-white dark:bg-black;
+  @apply bg-black text-white;
+
+  scroll-behavior: smooth;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;

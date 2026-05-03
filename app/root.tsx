@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import SmoothScroll from "./components/smooth-scroll";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -32,9 +33,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <script>AOS.init();</script>
+      {/* The standalone <script> tag has been removed. */}
       <body>
         {children}
+        {/* SmoothScroll is now added as a React component. */}
+        <SmoothScroll />
         <ScrollRestoration />
         <Scripts />
       </body>
