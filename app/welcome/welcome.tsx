@@ -70,9 +70,9 @@ export default function Welcome() {
       <main className="bg-black border-x border-white max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2">
           {/* Left Side - Sticky */}
-          <div className="lg:sticky lg:top-[65px] h-[calc(100vh-2rem)] lg:border-r lg:border-white flex items-center justify-center sm:border-b sm:border-white">
+          <div className="lg:sticky lg:top-[65px] h-[calc(100vh-2rem)] lg:border-r lg:border-white flex items-center justify-center max-sm:border-b max-sm:border-white  md:border-b md:border-white">
             <div className="text-left">
-              <h1 className="text-8xl text-white mb-4">
+              <h1 className="text-6xl md:text-8xl lg:text-8xl text-white mb-4">
                 Errol <br />
                 Sabanal
               </h1>
@@ -102,7 +102,9 @@ export default function Welcome() {
             <div className="space-y-16">
               <section className="border-b border-white">
                 <div className="flex flex-col justify-center items-center h-[calc(100vh-5rem)] px-4 py-20">
-                  <h1 className="mb-4 text-7xl">Get in touch</h1>
+                  <h1 className="mb-4 text-5xl md:text-7xl lg:text-7xl">
+                    Get in touch
+                  </h1>
                   <div className="flex justify-between items-center">
                     <p className="text-gray-400 leading-relaxed">
                       sabanal.errol@gmail.com
